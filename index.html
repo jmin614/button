@@ -1,0 +1,38 @@
+ <!DOCTYPE html>
+ <html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <title>button</title>
+     <meta name="description" content="DESCRIPTION">
+
+     <style>
+     body{
+       text-align: center;
+     }
+     span{
+       color: red;
+       font-size: 40px;
+     }
+     </style>
+     <!--[if lt IE 9]>
+       <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+     <![endif]-->
+ </head>
+
+ <body>
+   <a href="index_2.html" onclick="shu"><img src="img/btn.jpg" id="btn" width="300px" height="300px"></a>
+   <h1>이 버튼을 <span>절대</span> 누르면 안됩니다.</h1>
+
+   <body onload="javascript:window_onload()">
+   <script>
+   function window_onload(){
+     setTimeout('go_url()',5000)  // 5초후 go_url() 함수를 호출한다.
+   } function go_url(){
+     location.href="index_3.html"  // 페이지 이동...
+      }
+    </script>
+
+ </body>
+
+ </html>
